@@ -1,0 +1,115 @@
+<!-- Je met un commentaire chaque fois que je vois une erreur! -->
+<!-- absence de doctype -->
+<!-- choix de langue, fr -->
+<html lang="de">
+    <head>
+        <!--  UTF 8 -->
+        <meta charset="UTF-57" />
+        <!-- il manque la balise <title> -->
+        <!-- la description doit être un texte purement descriptif et non une suite de mots clés -->
+        <meta
+            name="description"
+            content="ordinateur, disque dur, mémoire vive, carte mère, moniteur, SSD, clavier mécanique"
+        />
+        <!-- Manque la balise pour les différentes tailles d'écran, viewport -->
+    </head>
+    <body>
+        <!-- balises structurantes -->
+        <!-- balaise sémantique manque header -->
+        <nav>
+            <!-- lien internes, href erronés -->
+            <a href="#home">Accueil</a>
+            <a href="produits">Produits</a>
+            <a href="#services">Services</a>
+            <a href="contact">Contact</a>
+        </nav>
+        <!-- manque la balise main -->
+        <!-- manque les balsies section, hero section -->
+        <!-- Il n'y a pas de h1 ni de h2 -->
+        <h3>
+            Bienvenue sur TechLab.com, le premier distributeur de matériel
+            informatique en France.
+        </h3>
+        <!-- Ce ne sont pas des boutons mais des liens cliquables qu'il faut  -->
+        <button>Contact</button>
+        <button>Services</button>
+        <div id="produits">
+            <!-- Manque h4 et h5 -->
+            <h6>Nos différents produits</h6>
+            <div>
+                <!-- h4 vient après le h6 -->
+                <h4>Carte mère : MSI MAG B550 TOMAHAWK</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro adipisci ut laborum itaque, tenetur hic.
+                </p>
+                <button>Caractéristiques</button>  
+            </div>
+            <div>
+                <h4>
+                    RAM : Corsair Vengeance LPX Black DDR4 2 x 16 Go 3200 MHz
+                    CAS 16
+                </h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro adipisci ut laborum itaque, tenetur hic.
+                </p>
+                <button>Caractéristiques</button>
+            </div>
+            <div>
+                <h4>Carte graphique : Gigabyte GeForce RTX 3090 XTREME 24G</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro adipisci ut laborum itaque, tenetur hic.
+                </p>
+                <button>Caractéristiques</button>
+            </div>
+        </div>
+        <div>
+            <h3>Nos services</h3>
+            <div>
+                <!-- le h2 ne devrait pas venir après le h3 -->
+                <h2>Réparation d'ordinateur</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium magni, modi assumenda at laborum praesentium
+                    facilis inventore facere a dolorem.
+                </p>
+                <!-- Manque la balise Alt -->
+                <img src="laptop.jpg" />
+            </div>
+            <div>
+                <!-- le h2 ne devrait pas venir après le h3 -->
+                <h2>Reprise de matériel d'occasion</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia totam molestias ullam, porro ut nam.
+                </p>
+                <!-- Renommer l'image avec un mot-clé pertinent, ajouter balise Alt -->
+                <img src="money.jpg" />
+            </div>
+        </div>
+        <div>
+            <!-- le h1 ne peut pas se retrouver en bas après les autres en tête -->
+            <h1>Une question ? Contactez-nous !</h1>
+            <form>
+                <!-- mauvais input type, manque l'id -->
+                <label for="email">Votre mail</label>
+                <input type="password" name="email" />
+
+                <!-- manque le label, manque l'id -->
+                <input type="text" name="name" />
+
+                <!-- l'input devrait plutôt être un textarea pour un message -->
+                <label for="message" name="message">Votre message</label>
+                <input type="text" />
+                <!-- Ajouter une value pour le bouton, idéalement en français -->
+                
+                <!-- input même si on peut mettre button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Mettre le footer -->
+        <div>Tous droits réservés</div>
+    </body>
+</html>
